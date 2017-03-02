@@ -1,0 +1,477 @@
+/*sets up the background image,size of the white body and the font to be used throughout the website*/
+body{
+	background-color: #ffffff;
+	background-image: url(../images/white_brick_wall_@2X.png);
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width:85%;
+	overflow-y: scroll;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px
+}
+/* centers website*/
+.sitewrapper{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+/*sets up the header*/
+header{
+	background-color: #ffffff;
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*fixes the logo onto the correct position*/
+header img{
+	float: left;
+	top:0px;
+	padding-left: 22%;
+}
+/* sets the title of the site*/
+header h1{
+	float: left;
+	padding-top: 8%;
+	font-size: 40px;
+	font-family: 'Audiowide', cursive; /*aquired from gooogle fonts*/
+	
+}
+/*sets up the social media buttons acquired from their relative website*/
+.socialmedia{
+	float:right;
+	width:15%;
+	padding-top: 1%;
+	padding-right: 2%;
+}
+.socialmedia a{
+	float:left;
+	padding-left: 5%;
+}
+/*sets up the navigation bar*/
+nav{
+	padding-bottom: 30px;
+	float:left;
+	padding-left: 15%;
+}
+nav a{
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+	display: block; 
+	padding: 1px 40px;
+	font-weight: bold;
+}
+nav ul ul{
+	display:none;
+	left:0;
+	padding:0;
+}
+nav ul li:hover > ul{
+	display:block;
+	position: absolute;
+	border: none;
+	margin: 0;
+	padding: 0;
+	float:none;
+}
+nav ul{
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	list-style: none;
+	padding: 0 10px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+nav li{
+	display: inline-block;
+	position: relative;
+}
+nav ul ul li {
+		background-color: #ffffff;
+}
+nav ul ul li a{
+	padding-top:5px;
+}
+nav ul ul li:hover > a{
+	background-color: #DAD6D5;
+}
+nav li:not(:last-child) { 
+    border-right:solid 1px #7D7D7D;
+}
+#selected a{
+		color:#999999;
+}
+/*changes color of the link to the page the user is on so they can tell where they are*/
+#selected a{
+		color:#999999;
+}
+/*sets up body of website*/
+#body{
+	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	width:1000px;
+	font-size: 0;
+}
+/*moves img on homepage to middle of screen*/
+.homeimg{
+	padding-left: 15%;
+	
+}
+/* sets position of the rotating image and it's size, modified from online 
+tutorial: http://trendmedia.com/news/infinite-rotating-images-using-jquery-javascript/ */
+#rotating-item-wrapper {
+	float:left;
+	padding-bottom: 150px;
+	margin-top: 30px;
+	position: relative;
+	width: 980px;
+	height: 347px;
+	margin-left: 15%;
+}
+.rotating-item {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/* sets page heading settings making them grey*/
+#body h1{
+	font-size: 18px;
+	font-weight: bold;
+	color: #666666;
+	padding-top: 2%;
+}
+/*dark heading */
+h2{
+	font-size:18px;
+	font-weight: bold;
+	font-family: Arial;
+	padding-bottom:5px;
+}
+/* blue text heading */
+#body h3{
+	font-size: 16px;
+	font-style: italic;
+	color: #0099cc;
+}
+/*sets up the area of text in the about section pages, also was utlised on other pages */
+#abouttext{
+	font-size: 14px;
+	width: 40%;
+	padding-left: 10%;
+	float:left;
+	padding-bottom: 5%;
+	
+}
+/*sets dot point list*/
+#list{
+	list-style-type:disc;
+	padding-left: 35px;
+	padding-bottom: 10px;
+}
+#list li{
+	padding-bottom: 3px;
+}
+#abouttext h1{
+	padding-bottom: 20px;
+	
+}
+#abouttext li{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#abouttext p{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+#aboutimg{
+	width:40%;
+	float:right;
+	margin-right: 5%;
+	padding-top: 10px;
+}
+/*sets up the event page layout*/
+.event{
+	font-size: 14px;
+	width: 45%;
+	padding-left: 10%;
+	float:left;
+}	
+.event p{
+	margin-bottom: 10px;
+}
+.event h2{
+	margin-bottom: 5px;
+}
+.event img{
+	width: 40%;
+	float:right;
+	padding-left:5px;
+	
+}
+.event h1{
+	padding-bottom: 5%;
+}
+/* sets the suggestion link on events and projects pages */
+.suggestion{
+	float: right;
+	font-size: 14px;
+	width: 35%;
+	font-size: 18px;
+	color: #666666;
+	padding-top: 5%;
+	margin-right: 5%;
+	
+}
+.suggestion #button{
+	margin-left: 20%;
+}
+/*setting up the suggestions page*/
+.suggestions{
+	float:left;
+	padding-left: 20%;
+	width: 800px;
+}
+#name{
+	width:75%;
+	font-size: 16px;
+}
+#email{
+	width:75%;
+	font-size: 16px;
+}
+#suggestionbox{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	font-size: 16px;
+}
+/* stylises button*/
+#send{
+	background-color: #0088CB;
+	color: #ffffff;
+	font-size: 18px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	margin-left: 70%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#sendRsvp{
+	background-color: #0088CB;
+	color: #ffffff;
+	font-size: 18px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-left: 64%;
+	margin-top: 5px;
+}
+#submitComment{
+	background-color: #0088CB;
+	color: #ffffff;
+	font-size: 14px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+	margin-bottom: 4px;
+}
+#sheader{
+	float: left;
+	padding-left: 20%;
+	padding-bottom: 20px;
+}
+#name{
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#email{
+	padding: 5px;
+	margin-bottom:5px;
+}
+#suggestionbox{
+padding: 6px;
+	margin-bottom: 5px;
+}
+#button{
+	background-color: #0088CB;
+	color: #ffffff;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	box-shadow: 2px 1px 5px #888888;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+#email{
+	list-style: none;
+}
+/*sets up the comment section */
+.commentwrapper{
+	margin: 10px;
+	border: 1px solid;
+	height: auto;
+	width: auto;
+	
+}
+.commentsholder-ul{
+	list-style: none;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+.comment-holder{
+	list-style-type:none;
+	width: auto;
+	height: 50px;
+	border: 1px solid;
+}
+#display{
+	width:250px;
+	height:250px;
+	border:1px dashed gray;
+}
+iframe{
+	float: right;
+	width: 40%;
+	height: 75%;
+	padding-right: 50px;
+}
+#googlemap{
+	width:450px;
+	height:450px;
+	padding-bottom: 10px;
+
+}
+#clear{
+	clear: both;
+}
+/*setting up the comment section */
+.commentSection{
+	border: 1px solid #888888;
+	float: none;
+	width: 700px;
+	margin-top: 10px;
+}
+/* sets the name of the person to blue */
+#nameH{
+	margin-top: 10px;
+	margin-left: 10px;
+	color: #0088CB;
+	font-size: 16px;
+}
+#emailH{
+	color:#0088CB;
+	font-size: 16px;
+}
+#commentNameInput{
+	margin-top: 10px;
+	margin-right:50px;
+	margin-bottom: 10px;
+}
+/* creates border to segregate comment section from rest of site*/
+#commentsContainer{
+	border: 1px solid #888888;
+}
+/*sets error message to red */
+#error{
+	color: red;
+}
+/* sets the comment error*/
+#errorC{
+	color: red;
+}
+#thanks{
+	margin-left: 20px;
+}
+.comment{
+	margin-left: 10px;
+	margin-top: 10px;
+	border-bottom: 1px solid #888888;
+}
+.commentAge{
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+#messageH{
+	padding-left: 10px;
+}
+#commentMessageInput{
+	width: 600px;
+	height: 100px;
+	margin-left: 10px;
+}
+/*sets footer of page*/
+footer{
+	background-color: #DAD6D5;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	clear:both;
+}
+footer h1{
+	color: #666666;
+	font-size: 16px;
+}
+/* sets the sponsers linked logos in the footer */
+footer img{
+	padding-right: 30px;
+	padding-left: 6%;
+	padding-bottom:10px;
+	width: 230px; 
+	position: relative;
+
+}
+/* used to centralise objects */
+.center {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+/* sets layout of footer*/
+footer p{
+	font-size: 12px;
+	text-align: center;
+}
+footer h1{
+	padding-left: 20px;
+	padding-top: 10px;
+}
+/*sets the navigation bar in the footer*/
+.fnav{
+	background-color: #DAD6D5;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	padding-left: 8%;
+}
+.fnav a{
+	text-align: center;
+	color: #000000;
+	text-decoration: none; 
+	padding: 1px 40px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.fnav ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+.fnav li{
+	display: inline;
+	
+}

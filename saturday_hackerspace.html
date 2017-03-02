@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Bunch of Hackz</title>
+		<link rel="stylesheet" href ="css/reset.css" type="text/css" />
+		<link rel="stylesheet" href ="css/style.css" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Audiowide' rel='stylesheet' type='text/css'/>
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<div class="siteWrapper">
+			<header>
+			<div class="socialmedia">
+				<a href="http://www.facebook.com"><img src="images/facebook.jpg" alt="facebook"/></a>
+				<a href="http://www.twitter.com"><img src="images/twitter.jpg" alt="twitter"/></a>
+				<a href="https://plus.google.com/"><img src="images/google.jpg" alt="google+"/></a>
+			</div>
+				<a href="index.html"><img src="images/logo.png" alt="logo" height ="180"/></a>
+				<h1>Bunch of Hackz</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li id="selected"><a href="events.html">EVENTS</a></li>
+						<li><a href="projects.html">PROJECTS</a></li>
+						<li><a href="about.html">ABOUT</a>
+							<ul>
+								<li><a href="community.html">THE COMMUNITY</a></li>
+								<li><a href="facilities_and_equipment.html">FACILITIES AND EQUIPMENT</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html">CONTACT</a>
+							<ul>
+								<li><a href="suggestions.html">SUGGESTIONS</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<div id="body">
+				<img src="images/hackerspace.jpg" alt="hacking" id="aboutimg">
+				<div id="abouttext">
+					<h1>SATURDAY HACKERSPACE</h1>
+					<h3> Where: </h3>
+					<p>The Edge. Stanley Place, Cultural Centre, Southbank, Brisbane QLD 4101</p>
+					<h3> When:</h3>
+					<p>Every first Saturday of the month. 9am - 5pm.</p>
+					<h3>Price:</h3>
+					<p>$15 to become a member</p>
+					<p>A hackerspace is a place where people with similar interests in technology, science, art, culture, and making meet. Activities are not in the slightest restricted to only computer science, but also emerge from electronics, contemporary art, photography, and any and all other pursuits worth sharing. The hackerspace offers a turnkey infrastructure to its members where innovative projects that would not come to life in a garage, can find nourishment and support.
+						This event is for:
+						High school students, Graduate students, Post graduate students, Employed adults, Unemployed adults
+						Main themes:
+						software development, Robotics, Hardware<br><br>
+						To attend RSVP below.</p>
+						<p id="error"></p>
+					<form class="rsvp" name="rsvp" action="thankyou.html" >
+						<h3>Name:</h3><input type="text" name="name" id="name"required/>
+						<br>
+						<h3>Email:</h3><input type="text" name="email" id="email" required/>
+						<br>
+						<input type="submit" value="Send" onClick="validateRsvp()" id="sendRsvp"/>
+					</form>
+					<p id="errorC"></p>
+					<!-- The comment section is adapted from the Week 10 tutorial-->
+					<div class="commentSection">
+						<div class="newCommentInputs">
+							<div class="newCommentInputName">
+							<label for="commentName" id="nameH" >Name: </label><input type="text" id="commentNameInput" name="name">
+							<label for="commentCourse" id="emailH" >Email: </label><input type="text" id="commentCourseInput" name="name">
+							</div>
+				<label for="commentMessage"><h3 id="messageH">Comment: </h3></label><textarea rows="5" id="commentMessageInput" ></textarea>
+							<button id="submitComment" type="button">SUBMIT</button>
+						</div>
+					<div id="commentsContainer">
+						<div class="comment">
+							<p class="commentCourse"></p>
+						</div>
+					</div>
+				</div>
+				</div>
+					<div id="comment_template">
+					<div class="comment">
+						<div class="commentContent">
+							<h3 class="commentName"></h3>
+							<p class="commentCourse"></p>
+							<p class="commentAge"></p>
+							<p class="commentMessage">
+							</p>
+						</div>
+				</div>
+				</div>
+				<footer>
+					<h1>
+					Sponsors:
+					</h1>
+					<div id="center">
+						<a href="https://www.qld.gov.au/"><img src="images/qld_gov.jpg" alt="Queensland Government" /></a>
+						<a href="http://edgeqld.org.au/"><img src="images/edge.png" alt="The Edge" /></a>
+						<a href="http://www.uq.edu.au/"><img src="images/uq.jpg" alt="University of Queensland" /></a>
+					</div>
+					<div class="fnav">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="projects.html">PROJECTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</div>
+					<p>
+					&copy; 2015 by Bunch of Hackz
+					</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
